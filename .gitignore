@@ -1,3 +1,6 @@
 venv
 *.pyc
 staticfiles
+.env
+*.sqlite3
+secrets.py
