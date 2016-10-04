@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 import dj_database_url
+<<<<<<< HEAD
 from secrets import *
+=======
+>>>>>>> master
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,13 +24,22 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
+<<<<<<< HEAD
+=======
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = "8ado-389fjtupe5w$eh63dr7edv=mt5a2e7sf=ocqm&7&g%b76"
+
+>>>>>>> master
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
     'django_admin_bootstrapped',
+=======
+>>>>>>> master
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +50,10 @@ INSTALLED_APPS = [
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     # 'debug_toolbar',
+=======
+>>>>>>> master
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -74,6 +89,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog.wsgi.application'
 
+<<<<<<< HEAD
+=======
+
+# Database
+# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+>>>>>>> master
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
