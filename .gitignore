@@ -1,10 +1,6 @@
 venv
 *.pyc
-<<<<<<< HEAD
 staticfiles
 .env
 *.sqlite3
 secrets.py
-=======
-staticfiles
->>>>>>> master
